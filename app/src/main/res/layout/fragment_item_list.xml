@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layer_list_item_news"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:contentDescription="@null"
+        android:padding="2dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img"
+        android:layout_toRightOf="@id/img"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img"
+        android:layout_below="@id/tv_title"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/img"
+        android:layout_toRightOf="@id/img"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>
