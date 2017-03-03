@@ -22,6 +22,18 @@ public class MultipleLayout extends RelativeLayout implements View.OnClickListen
     public static final int STATUS_FAILURE = 3;
     public static final int STATUS_EMPTY = 4;
 
+    public View getViewLoading() {
+        return viewLoading;
+    }
+
+    public View getViewFailure() {
+        return viewFailure;
+    }
+
+    public View getViewEmpty() {
+        return viewEmpty;
+    }
+
     private View viewLoading;
     private View viewContent;
     private View viewFailure;

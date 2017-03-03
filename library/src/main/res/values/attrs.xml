@@ -5,4 +5,22 @@
         <attr name="layout_failure" format="reference"/>
         <attr name="layout_empty" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <!--图片边框宽度、颜色、是否覆盖、填充色-->
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="navigation_icon" format="reference"/>
+        <attr name="navigation_title" format="reference|string"/>
+        <attr name="navigation_description" format="reference|string"/>
+        <attr name="navigation_title_color" format="color"/>
+        <attr name="navigation_title_size" format="dimension"/>
+        <attr name="navigation_des_color" format="color"/>
+        <attr name="navigation_des_size" format="dimension"/>
+    </declare-styleable>
 </resources>

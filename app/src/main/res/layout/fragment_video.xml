@@ -5,6 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <com.li.library.widget.TopBar
+        android:id="@+id/top_bar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigation_title="标题"
+        app:navigation_description="描述"
+        android:background="#de3031"
+        app:navigation_title_color="@color/white"
+        app:navigation_des_color="@color/white"
+        app:navigation_title_size="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="15sp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

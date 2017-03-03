@@ -2,9 +2,11 @@ package com.li.view.fragment;
 
 
 import android.view.View;
+import android.widget.Toast;
 
 import com.li.base.BaseFragment;
 import com.li.library.widget.MultipleLayout;
+import com.li.library.widget.TopBar;
 import com.li.read.R;
 
 import butterknife.BindView;
@@ -17,6 +19,8 @@ import butterknife.OnClick;
 public class VideoFragment extends BaseFragment {
     @BindView(R.id.layout_multiple)
     MultipleLayout mLayoutMultiple;
+    @BindView(R.id.top_bar)
+    TopBar mTopBar;
 
     @Override
     protected int getLayoutId() {
@@ -26,6 +30,12 @@ public class VideoFragment extends BaseFragment {
     @Override
     protected void firstVisibleDeal() {
         super.firstVisibleDeal();
+        mTopBar.setOnTopBarListener(new TopBar.OnTopBarListener() {
+            @Override
+            public void onNavigationIconClickListener() {
+                Toast.makeText(getActivity(), "click", Toast.LENGTH_SHORT).show();
+            }
+        });
         mLayoutMultiple.setOnMultipleClickListener(new MultipleLayout.OnMultipleClickListener() {
             @Override
             public void emptyClickListener() {
@@ -56,4 +66,6 @@ public class VideoFragment extends BaseFragment {
                 break;
         }
     }
+
+
 }
